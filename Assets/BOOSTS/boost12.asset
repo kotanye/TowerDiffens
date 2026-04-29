@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1172e4bed278f459ce01dc091d0192, type: 3}
+  m_Name: boost12
+  m_EditorClassIdentifier: 
+  playerhealth: 0
+  damage: 0
+  boostname: 
+  bullets: 0
+  speed: 0
+  speedrate: 0
+  currentRare: 0
+  bulletTipe: {fileID: 5383928467200354548, guid: 9f5eaf22c54700b42ac3827bef55db84, type: 3}
