@@ -1612,7 +1612,7 @@ PrefabInstance:
     - target: {fileID: 658280869054454028, guid: adb757afcc2015d4d8d60d07e899c07f, type: 3}
       propertyPath: bullet
       value: 
-      objectReference: {fileID: 5383928467200354548, guid: 9f5eaf22c54700b42ac3827bef55db84, type: 3}
+      objectReference: {fileID: 5383928467200354548, guid: d2095d29097ed8045ac8da4c1cb1a308, type: 3}
     - target: {fileID: 658280869054454028, guid: adb757afcc2015d4d8d60d07e899c07f, type: 3}
       propertyPath: damage
       value: 5
@@ -1967,6 +1967,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f59bf4913d0841b478224a279166304b, type: 2}
   - {fileID: 11400000, guid: ffa901d8ed5bc674d978d2d2aefc4072, type: 2}
   - {fileID: 11400000, guid: 00f453a3a7f041d4d9b3e32a054a60f7, type: 2}
+  - {fileID: 11400000, guid: fd1d9abd0ac909b4d973cd0d4eebbe7d, type: 2}
   button: {fileID: 265018056}
   button1: {fileID: 573929476}
   button2: {fileID: 330122223}
@@ -2638,8 +2639,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae524258b24b60f4ba96e113ff24c39f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enamySound: {fileID: 0}
-  musicSound: {fileID: 0}
+  enamySound: {fileID: 2058512837}
+  musicSound: {fileID: 2058512840}
+  MasterValume: 0
 --- !u!4 &2058512839
 Transform:
   m_ObjectHideFlags: 0

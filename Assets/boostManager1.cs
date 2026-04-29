@@ -56,6 +56,11 @@ public class BoostMeneger : MonoBehaviour
         {
             GunLogic.instance.speed += sbust.speed;
         }
+
+        if (sbust.bulletTipe != null)
+        {
+            GunLogic.instance.bullet = sbust.bulletTipe;
+        }
         
     }
     public Sbust Getrandboost()

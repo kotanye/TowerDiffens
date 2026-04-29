@@ -11,5 +11,5 @@ public class Sbust : ScriptableObject
     public float speedrate = 1;
     public enum boostrare { rare ,epic,legendary };
     public boostrare currentRare;
-
+    public GameObject bulletTipe;
 }

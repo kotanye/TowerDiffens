@@ -14,5 +14,10 @@ public class ButtonLogic : MonoBehaviour
     {
         
     }
-    public void OnClick(string ScaneName) => SceneManager.LoadScene(0);
+    public void OnClick(string ScaneName) => SceneManager.LoadScene(ScaneName);
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
