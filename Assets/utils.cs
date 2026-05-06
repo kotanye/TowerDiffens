@@ -5,10 +5,10 @@ using UnityEditor;
 using UnityEngine;
 
 
-public  static class utils 
+public static class utils
 {
 
-    public static GameObject ThereEnemy()
+    /* public static GameObject ThereEnemy()
     {
         List<GameObject> gameObjects = Enamymeneger.instans.spawnedEnamy;
         Transform plaertransform = Player.instans.transform;
@@ -29,8 +29,11 @@ public  static class utils
             }
 
         }
-        return returnedEnemy;
+        return returnedEnemy; 
+        
+        
     }
+    */
     public static  bool IsLuck( float luckChance)
     {
         float rundomnumber = UnityEngine.Random.Range(0, 1f);
