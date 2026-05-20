@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class bulletLOgic : MonoBehaviour
@@ -10,6 +11,7 @@ public class bulletLOgic : MonoBehaviour
     [HideInInspector]
     public float damage = 5;
     public float kfsmesh= 0;
+    public bool Naskvoz = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,13 +19,14 @@ public class bulletLOgic : MonoBehaviour
         //enemy = utils.ThereEnemy();
         //enemy = enemy.GetComponentInChildren<Transform>().gameObject;
         rb = GetComponent<Rigidbody2D>();
+        StartCoroutine(aftodie());
         //possition = ((Vector2)enemy.transform.position -  (Vector2)transform.position).normalized;
         //possition = Input.mousePosition;
 
-         //possition = Camera.main.ScreenToWorldPoint(possition).normalized;
+        //possition = Camera.main.ScreenToWorldPoint(possition).normalized;
         //possition = new Vector2(Camera.main.ScreenToWorldPoint(possition).x , Camera.main.ScreenToWorldPoint(possition).y).normalized;
         //rb.linearVelocity = possition.normalized * speed ;
-        
+
 
     }
 
@@ -38,12 +41,20 @@ public class bulletLOgic : MonoBehaviour
         if (collision.gameObject.tag == "enemy")
         {
             collision.gameObject.GetComponentInChildren<Enamy>().health -= damage;
-            print("reg");
-            Destroy(gameObject);
+            if (Naskvoz == true)
+            {
+                Destroy(gameObject);
+            }
+           
             
 
         }
         
     }
-    
+
+    IEnumerator aftodie()
+    {
+        yield return new WaitForSeconds(3);
+        Destroy(gameObject);
+    }
 }
