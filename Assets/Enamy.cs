@@ -48,6 +48,9 @@ public class Enamy : MonoBehaviour
     }
     public void  Dead()
     {
+        // Когда враг умрет - вызываем основной метод, который потянет всех, кто подписан на событие
+        EventManager.instance.OnEnemyDied(gameObject);
+        
         audioMeneger.Instance.PlaySound(deathSound);
         if (utils.IsLuck(chestchance))
         {
